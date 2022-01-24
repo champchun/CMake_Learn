@@ -1,0 +1,5 @@
+project(src)
+
+add_library(${PROJECT_NAME} hello.cc)
+
+add_library(src::say-hello ALIAS ${PROJECT_NAME})

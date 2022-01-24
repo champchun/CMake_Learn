@@ -1,0 +1,11 @@
+find_package(GTest REQUIRED)
+
+include_directories(${GTEST_IMCLUDED_DIR})
+
+add_executable(test_my_class test_my_class.cc)
+
+
+target_link_libraries(test_my_class ${GTEST_BOTH_LIBRARIES} pthread src::say-hello)
+
+gtest_discover_tests(test_my_class)
+set(UNIT_TEST test_my_class)

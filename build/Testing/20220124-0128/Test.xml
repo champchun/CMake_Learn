@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-x86_64-linux-gnu-g++-7"
+	BuildStamp="20220124-0128-Experimental"
+	Name="Neil-LEGTOP"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/x86_64-linux-gnu-g++-7"
+	CompilerVersion="7.5.0"
+	OSName="Linux"
+	Hostname="Neil-LEGTOP"
+	OSRelease="5.10.60.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Wed Aug 25 23:20:18 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="94"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4096"
+	TotalPhysicalMemory="15984"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2712"
+	>
+	<Testing>
+		<StartDateTime>Jan 24 10:29 CST</StartDateTime>
+		<StartTestTime>1642991342</StartTestTime>
+		<TestList>
+			<Test>./test/testCase.test0</Test>
+		</TestList>
+		<Test Status="passed">
+			<Name>testCase.test0</Name>
+			<Path>./test</Path>
+			<FullName>./test/testCase.test0</FullName>
+			<FullCommandLine>/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/test/test_my_class "--gtest_filter=testCase.test0" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0275375</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/test/test_my_class "--gtest_filter=testCase.test0" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNkD0PgjAQhvf+ihtloMHVhMGocTBBAzoRhhoP0qS0pj307ws0EJEYfaf7eHL33iWGcAV7YyqFcEZHUEpFaCEGarONcMi7IGJ5PKqAtNFa6gqWPQWlNfUQu0YScpaHowrYK3MVyvdRP6Q1ukbdskhhc/+A32cOHlgO6SWBXsXMma/D8TDrwSKC2gW/F3gQyJBQAfvPPaGw4c089fQ3334CVmg+3dM6P62zbLftrvIsZy+QonrT====</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jan 24 10:29 CST</EndDateTime>
+		<EndTestTime>1642991342</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

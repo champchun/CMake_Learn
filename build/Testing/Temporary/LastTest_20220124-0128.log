@@ -1,0 +1,29 @@
+Start testing: Jan 24 10:29 CST
+----------------------------------------------------------
+1/1 Testing: testCase.test0
+1/1 Test: testCase.test0
+Command: "/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/test/test_my_class" "--gtest_filter=testCase.test0" "--gtest_also_run_disabled_tests"
+Directory: /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/test
+"testCase.test0" start time: Jan 24 10:29 CST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = testCase.test0
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from testCase
+[ RUN      ] testCase.test0
+[       OK ] testCase.test0 (0 ms)
+[----------] 1 test from testCase (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"testCase.test0" end time: Jan 24 10:29 CST
+"testCase.test0" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Jan 24 10:29 CST
