@@ -491,67 +491,67 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named cmake_learn
+# Target rules for targets named Learn_First_run
 
 # Build rule for target.
-cmake_learn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 cmake_learn
-.PHONY : cmake_learn
+Learn_First_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Learn_First_run
+.PHONY : Learn_First_run
 
 # fast build rule for target.
-cmake_learn/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/build
-.PHONY : cmake_learn/fast
+Learn_First_run/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/build
+.PHONY : Learn_First_run/fast
 
 #=============================================================================
-# Target rules for targets named test_my_class
+# Target rules for targets named Learn_First_lib
 
 # Build rule for target.
-test_my_class: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test_my_class
-.PHONY : test_my_class
+Learn_First_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Learn_First_lib
+.PHONY : Learn_First_lib
 
 # fast build rule for target.
-test_my_class/fast:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_my_class.dir/build.make test/CMakeFiles/test_my_class.dir/build
-.PHONY : test_my_class/fast
+Learn_First_lib/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/build
+.PHONY : Learn_First_lib/fast
 
 #=============================================================================
-# Target rules for targets named src
+# Target rules for targets named unit_tests_run
 
 # Build rule for target.
-src: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src
-.PHONY : src
+unit_tests_run: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 unit_tests_run
+.PHONY : unit_tests_run
 
 # fast build rule for target.
-src/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
-.PHONY : src/fast
+unit_tests_run/fast:
+	$(MAKE) $(MAKESILENT) -f tests/unit_tests/CMakeFiles/unit_tests_run.dir/build.make tests/unit_tests/CMakeFiles/unit_tests_run.dir/build
+.PHONY : unit_tests_run/fast
 
-main.o: main.cc.o
+main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
-main.cc.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/main.cc.o
-.PHONY : main.cc.o
+main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-main.i: main.cc.i
+main.i: main.cpp.i
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cc.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/main.cc.i
-.PHONY : main.cc.i
+main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-main.s: main.cc.s
+main.s: main.cpp.s
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cc.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/main.cc.s
-.PHONY : main.cc.s
+main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -590,9 +590,9 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
-	@echo "... cmake_learn"
-	@echo "... src"
-	@echo "... test_my_class"
+	@echo "... Learn_First_lib"
+	@echo "... Learn_First_run"
+	@echo "... unit_tests_run"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

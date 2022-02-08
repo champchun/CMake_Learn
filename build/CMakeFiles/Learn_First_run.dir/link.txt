@@ -1,0 +1,1 @@
+/usr/bin/x86_64-linux-gnu-g++-7 -g CMakeFiles/Learn_First_run.dir/main.cpp.o -o Learn_First_run  src/libLearn_First_lib.a 

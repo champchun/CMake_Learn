@@ -150,10 +150,10 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_NAME:STATIC=Learn_First
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION:STATIC=1.0.0
+CMAKE_PROJECT_VERSION:STATIC=2.0.0
 
 //Value Computed by CMake
-CMAKE_PROJECT_VERSION_MAJOR:STATIC=1
+CMAKE_PROJECT_VERSION_MAJOR:STATIC=2
 
 //Value Computed by CMake
 CMAKE_PROJECT_VERSION_MINOR:STATIC=0
@@ -242,6 +242,9 @@ CTEST_SUBMIT_RETRY_DELAY:STRING=5
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=/usr/bin/git
+
 //The directory containing a CMake configuration file for GTest.
 GTest_DIR:PATH=/usr/local/lib/cmake/GTest
 
@@ -254,8 +257,26 @@ Learn_First_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 Learn_First_SOURCE_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn
 
+//Value Computed by CMake
+Learn_First_lib_BINARY_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/src
+
+//Value Computed by CMake
+Learn_First_lib_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Learn_First_lib_SOURCE_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/src
+
+//Value Computed by CMake
+Learn_First_tests_BINARY_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/tests
+
+//Value Computed by CMake
+Learn_First_tests_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+Learn_First_tests_SOURCE_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/tests
+
 //Command to build the project
-MAKECOMMAND:STRING=/home/neil/.local/lib/python3.8/site-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MAKECOMMAND:STRING=/home/neil/.local/lib/python3.8/site-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 
 //Path to the memory checking command, used for memory error detection.
 MEMORYCHECK_COMMAND:FILEPATH=MEMORYCHECK_COMMAND-NOTFOUND
@@ -265,15 +286,6 @@ MEMORYCHECK_SUPPRESSIONS_FILE:FILEPATH=
 
 //Name of the computer/site where compile is being run
 SITE:STRING=Neil-LEGTOP
-
-//Value Computed by CMake
-src_BINARY_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/src
-
-//Value Computed by CMake
-src_IS_TOP_LEVEL:STATIC=OFF
-
-//Value Computed by CMake
-src_SOURCE_DIR:STATIC=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/src
 
 
 ########################
@@ -348,8 +360,6 @@ CMAKE_EXE_LINKER_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_EXE_LINKER_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO
 CMAKE_EXE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_EXPORT_COMPILE_COMMANDS
-CMAKE_EXPORT_COMPILE_COMMANDS-ADVANCED:INTERNAL=1
 //Name of external makefile project generator.
 CMAKE_EXTRA_GENERATOR:INTERNAL=
 //Name of generator.
@@ -390,7 +400,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -445,6 +455,8 @@ CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 //Details about finding GTest
 FIND_PACKAGE_MESSAGE_DETAILS_GTest:INTERNAL=[/usr/local/lib/cmake/GTest/GTestConfig.cmake][c ][v1.10.0()]
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
 MAKECOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MEMORYCHECK_COMMAND

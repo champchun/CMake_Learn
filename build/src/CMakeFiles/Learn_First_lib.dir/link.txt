@@ -1,0 +1,2 @@
+/usr/bin/x86_64-linux-gnu-ar qc libLearn_First_lib.a CMakeFiles/Learn_First_lib.dir/hello.cpp.o
+/usr/bin/x86_64-linux-gnu-ranlib libLearn_First_lib.a

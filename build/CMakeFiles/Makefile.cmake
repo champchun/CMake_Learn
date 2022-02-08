@@ -43,7 +43,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "../src/CMakeLists.txt"
-  "../test/CMakeLists.txt"
+  "../tests/CMakeLists.txt"
+  "../tests/unit_tests/CMakeLists.txt"
   "/usr/local/lib/cmake/GTest/GTestConfig.cmake"
   "/usr/local/lib/cmake/GTest/GTestConfigVersion.cmake"
   "/usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake"
@@ -60,8 +61,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 set(CMAKE_MAKEFILE_PRODUCTS
   "DartConfiguration.tcl"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "test/CMakeFiles/CMakeDirectoryInformation.cmake"
   "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "tests/unit_tests/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -94,7 +96,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
-  "CMakeFiles/cmake_learn.dir/DependInfo.cmake"
-  "test/CMakeFiles/test_my_class.dir/DependInfo.cmake"
-  "src/CMakeFiles/src.dir/DependInfo.cmake"
+  "CMakeFiles/Learn_First_run.dir/DependInfo.cmake"
+  "src/CMakeFiles/Learn_First_lib.dir/DependInfo.cmake"
+  "tests/unit_tests/CMakeFiles/unit_tests_run.dir/DependInfo.cmake"
   )

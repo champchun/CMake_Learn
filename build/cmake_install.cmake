@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/test/cmake_install.cmake")
   include("/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/src/cmake_install.cmake")
+  include("/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/tests/cmake_install.cmake")
 
 endif()
 

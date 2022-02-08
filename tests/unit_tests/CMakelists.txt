@@ -1,0 +1,11 @@
+find_package(GTest REQUIRED)
+
+include_directories(${GTEST_IMCLUDED_DIR})
+
+add_executable(unit_tests_run test_hello.cpp)
+
+target_link_libraries(unit_tests_run ${GTEST_BOTH_LIBRARIES} pthread)
+
+target_link_libraries(unit_tests_run ${CMAKE_PROJECT_NAME}_lib)
+gtest_discover_tests(unit_tests_run)
+set(UNIT_TEST unit_tests_run)

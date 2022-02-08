@@ -27,7 +27,7 @@ NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
 ConfigureCommand: "/home/neil/.local/lib/python3.8/site-packages/cmake/data/bin/cmake" "/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn"
-MakeCommand: /home/neil/.local/lib/python3.8/site-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}" -- -i
+MakeCommand: /home/neil/.local/lib/python3.8/site-packages/cmake/data/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -44,7 +44,7 @@ SVNOptions:
 SVNUpdateOptions: 
 
 # Git options
-GITCommand: 
+GITCommand: /usr/bin/git
 GITInitSubmodules: 
 GITUpdateOptions: 
 GITUpdateCustom: 
@@ -57,9 +57,9 @@ P4UpdateOptions:
 P4UpdateCustom: 
 
 # Generic update command
-UpdateCommand: 
+UpdateCommand: /usr/bin/git
 UpdateOptions: 
-UpdateType: 
+UpdateType: git
 
 # Compiler info
 Compiler: /usr/bin/x86_64-linux-gnu-g++-7

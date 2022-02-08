@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-x86_64-linux-gnu-g++-7"
+	BuildStamp="20220126-0130-Experimental"
+	Name="Neil-LEGTOP"
+	Generator="ctest-3.22.1"
+	CompilerName="/usr/bin/x86_64-linux-gnu-g++-7"
+	CompilerVersion="7.5.0"
+	OSName="Linux"
+	Hostname="Neil-LEGTOP"
+	OSRelease="5.10.60.1-microsoft-standard-WSL2"
+	OSVersion="#1 SMP Wed Aug 25 23:20:18 UTC 2021"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="94"
+	ProcessorCacheSize="8192"
+	NumberOfLogicalCPU="8"
+	NumberOfPhysicalCPU="4"
+	TotalVirtualMemory="4096"
+	TotalPhysicalMemory="15984"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2712"
+	>
+	<Testing>
+		<StartDateTime>Jan 26 12:01 CST</StartDateTime>
+		<StartTestTime>1643169676</StartTestTime>
+		<TestList>
+			<Test>./tests/unit_tests/testCase.test0</Test>
+		</TestList>
+		<Test Status="failed">
+			<Name>testCase.test0</Name>
+			<Path>./tests/unit_tests</Path>
+			<FullName>./tests/unit_tests/testCase.test0</FullName>
+			<FullCommandLine>/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/tests/unit_tests/unit_tests_run "--gtest_filter=testCase.test0" "--gtest_also_run_disabled_tests"</FullCommandLine>
+			<Results>
+				<NamedMeasurement type="text/string" name="Exit Code">
+					<Value>Failed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Exit Value">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Execution Time">
+					<Value>0.0310287</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="numeric/double" name="Processors">
+					<Value>1</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Completion Status">
+					<Value>Completed</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Command Line">
+					<Value>/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/tests/unit_tests/unit_tests_run "--gtest_filter=testCase.test0" "--gtest_also_run_disabled_tests"</Value>
+				</NamedMeasurement>
+				<NamedMeasurement type="text/string" name="Environment">
+					<Value>#CTEST_RESOURCE_GROUP_COUNT=</Value>
+				</NamedMeasurement>
+				<Measurement>
+					<Value encoding="base64" compression="gzip">eJyNUU1vwjAMvedX+AgSNOzzEIkDgoImbWiinXZAqAqtodHSpGtc2P79+jHQYNqHD5EtPzvvPc8toYCZtVuNEKIj2ChNWMAQqKrG0qFXJwO2HB5jBYvSGGW2cNGgYFPY7JC7UhF6bNk/xgpm2q6lbvtodqqwJkNTYZH6ZX4G/rrzwIEtYfE0hyZW58x4ZognfDR+8PnYJhgFZAu5RV7rCScTHmfyBSONsjC8HnG8NIqiNq3fKEWtrRfnubgWMJVKlwUy/y3HmDABfC2lVvQOdgOUokPYSV2iEwygmRRCJknnsgdXXVZTfE5VnIJyAm6q+rZiD9PR3b0/+c4eOgPIXPdvC1ogkCWpu+x//lIluZ/YvTm93k9Xg0Ia7/SfivnjKAha5oMG67xTPe2GHmjlarPWqO1e/CaZsWrmsxn6Qcg+AHG4yE4=</Value>
+				</Measurement>
+			</Results>
+		</Test>
+		<EndDateTime>Jan 26 12:01 CST</EndDateTime>
+		<EndTestTime>1643169676</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

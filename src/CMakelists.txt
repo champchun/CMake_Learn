@@ -1,5 +1,9 @@
-project(src)
+project(${CMAKE_PROJECT_NAME}_lib)
 
-add_library(${PROJECT_NAME} hello.cc)
+file(GLOB_RECURSE SOURCES LIST_DIRECTORIES true *.h *.cpp)
 
-add_library(src::say-hello ALIAS ${PROJECT_NAME})
+message("SOURCES: ${GLOB_RECURSE}")
+
+add_library(${CMAKE_PROJECT_NAME}_lib STATIC
+${SOURCES}
+)

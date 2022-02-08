@@ -127,42 +127,42 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-src/CMakeFiles/src.dir/rule:
-	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/rule
-.PHONY : src/CMakeFiles/src.dir/rule
+src/CMakeFiles/Learn_First_lib.dir/rule:
+	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Learn_First_lib.dir/rule
+.PHONY : src/CMakeFiles/Learn_First_lib.dir/rule
 
 # Convenience name for target.
-src: src/CMakeFiles/src.dir/rule
-.PHONY : src
+Learn_First_lib: src/CMakeFiles/Learn_First_lib.dir/rule
+.PHONY : Learn_First_lib
 
 # fast build rule for target.
-src/fast:
-	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
-.PHONY : src/fast
+Learn_First_lib/fast:
+	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/build
+.PHONY : Learn_First_lib/fast
 
-hello.o: hello.cc.o
+hello.o: hello.cpp.o
 .PHONY : hello.o
 
 # target to build an object file
-hello.cc.o:
-	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/hello.cc.o
-.PHONY : hello.cc.o
+hello.cpp.o:
+	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/hello.cpp.o
+.PHONY : hello.cpp.o
 
-hello.i: hello.cc.i
+hello.i: hello.cpp.i
 .PHONY : hello.i
 
 # target to preprocess a source file
-hello.cc.i:
-	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/hello.cc.i
-.PHONY : hello.cc.i
+hello.cpp.i:
+	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/hello.cpp.i
+.PHONY : hello.cpp.i
 
-hello.s: hello.cc.s
+hello.s: hello.cpp.s
 .PHONY : hello.s
 
 # target to generate assembly for a file
-hello.cc.s:
-	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/hello.cc.s
-.PHONY : hello.cc.s
+hello.cpp.s:
+	cd /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/hello.cpp.s
+.PHONY : hello.cpp.s
 
 # Help Target
 help:
@@ -173,7 +173,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... src"
+	@echo "... Learn_First_lib"
 	@echo "... hello.o"
 	@echo "... hello.i"
 	@echo "... hello.s"

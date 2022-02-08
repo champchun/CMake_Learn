@@ -1,1 +1,0 @@
-/usr/bin/x86_64-linux-gnu-g++-7 -rdynamic CMakeFiles/cmake.dir/main.cc.o -o cmake 

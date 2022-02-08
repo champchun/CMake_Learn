@@ -63,14 +63,14 @@ CMAKE_BINARY_DIR = /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/cmake_learn.dir/all
-all: test/all
+all: CMakeFiles/Learn_First_run.dir/all
 all: src/all
+all: tests/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: test/preinstall
 preinstall: src/preinstall
+preinstall: tests/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
@@ -102,16 +102,16 @@ clean: CMakeFiles/ContinuousTest.dir/clean
 clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
-clean: CMakeFiles/cmake_learn.dir/clean
-clean: test/clean
+clean: CMakeFiles/Learn_First_run.dir/clean
 clean: src/clean
+clean: tests/clean
 .PHONY : clean
 
 #=============================================================================
 # Directory level rules for directory src
 
 # Recursive "all" directory target.
-src/all: src/CMakeFiles/src.dir/all
+src/all: src/CMakeFiles/Learn_First_lib.dir/all
 .PHONY : src/all
 
 # Recursive "preinstall" directory target.
@@ -119,23 +119,38 @@ src/preinstall:
 .PHONY : src/preinstall
 
 # Recursive "clean" directory target.
-src/clean: src/CMakeFiles/src.dir/clean
+src/clean: src/CMakeFiles/Learn_First_lib.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
-# Directory level rules for directory test
+# Directory level rules for directory tests
 
 # Recursive "all" directory target.
-test/all: test/CMakeFiles/test_my_class.dir/all
-.PHONY : test/all
+tests/all: tests/unit_tests/all
+.PHONY : tests/all
 
 # Recursive "preinstall" directory target.
-test/preinstall:
-.PHONY : test/preinstall
+tests/preinstall: tests/unit_tests/preinstall
+.PHONY : tests/preinstall
 
 # Recursive "clean" directory target.
-test/clean: test/CMakeFiles/test_my_class.dir/clean
-.PHONY : test/clean
+tests/clean: tests/unit_tests/clean
+.PHONY : tests/clean
+
+#=============================================================================
+# Directory level rules for directory tests/unit_tests
+
+# Recursive "all" directory target.
+tests/unit_tests/all: tests/unit_tests/CMakeFiles/unit_tests_run.dir/all
+.PHONY : tests/unit_tests/all
+
+# Recursive "preinstall" directory target.
+tests/unit_tests/preinstall:
+.PHONY : tests/unit_tests/preinstall
+
+# Recursive "clean" directory target.
+tests/unit_tests/clean: tests/unit_tests/CMakeFiles/unit_tests_run.dir/clean
+.PHONY : tests/unit_tests/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Experimental.dir
@@ -866,82 +881,82 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 .PHONY : CMakeFiles/ContinuousSubmit.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/cmake_learn.dir
+# Target rules for target CMakeFiles/Learn_First_run.dir
 
 # All Build rule for target.
-CMakeFiles/cmake_learn.dir/all: src/CMakeFiles/src.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=1,2 "Built target cmake_learn"
-.PHONY : CMakeFiles/cmake_learn.dir/all
+CMakeFiles/Learn_First_run.dir/all: src/CMakeFiles/Learn_First_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=3,4 "Built target Learn_First_run"
+.PHONY : CMakeFiles/Learn_First_run.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/cmake_learn.dir/rule: cmake_check_build_system
+CMakeFiles/Learn_First_run.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/cmake_learn.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Learn_First_run.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 0
-.PHONY : CMakeFiles/cmake_learn.dir/rule
+.PHONY : CMakeFiles/Learn_First_run.dir/rule
 
 # Convenience name for target.
-cmake_learn: CMakeFiles/cmake_learn.dir/rule
-.PHONY : cmake_learn
+Learn_First_run: CMakeFiles/Learn_First_run.dir/rule
+.PHONY : Learn_First_run
 
 # clean rule for target.
-CMakeFiles/cmake_learn.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cmake_learn.dir/build.make CMakeFiles/cmake_learn.dir/clean
-.PHONY : CMakeFiles/cmake_learn.dir/clean
+CMakeFiles/Learn_First_run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Learn_First_run.dir/build.make CMakeFiles/Learn_First_run.dir/clean
+.PHONY : CMakeFiles/Learn_First_run.dir/clean
 
 #=============================================================================
-# Target rules for target test/CMakeFiles/test_my_class.dir
+# Target rules for target src/CMakeFiles/Learn_First_lib.dir
 
 # All Build rule for target.
-test/CMakeFiles/test_my_class.dir/all: src/CMakeFiles/src.dir/all
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_my_class.dir/build.make test/CMakeFiles/test_my_class.dir/depend
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_my_class.dir/build.make test/CMakeFiles/test_my_class.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=5,6 "Built target test_my_class"
-.PHONY : test/CMakeFiles/test_my_class.dir/all
+src/CMakeFiles/Learn_First_lib.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=1,2 "Built target Learn_First_lib"
+.PHONY : src/CMakeFiles/Learn_First_lib.dir/all
 
 # Build rule for subdir invocation for target.
-test/CMakeFiles/test_my_class.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/CMakeFiles/test_my_class.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 0
-.PHONY : test/CMakeFiles/test_my_class.dir/rule
-
-# Convenience name for target.
-test_my_class: test/CMakeFiles/test_my_class.dir/rule
-.PHONY : test_my_class
-
-# clean rule for target.
-test/CMakeFiles/test_my_class.dir/clean:
-	$(MAKE) $(MAKESILENT) -f test/CMakeFiles/test_my_class.dir/build.make test/CMakeFiles/test_my_class.dir/clean
-.PHONY : test/CMakeFiles/test_my_class.dir/clean
-
-#=============================================================================
-# Target rules for target src/CMakeFiles/src.dir
-
-# All Build rule for target.
-src/CMakeFiles/src.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=3,4 "Built target src"
-.PHONY : src/CMakeFiles/src.dir/all
-
-# Build rule for subdir invocation for target.
-src/CMakeFiles/src.dir/rule: cmake_check_build_system
+src/CMakeFiles/Learn_First_lib.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/src.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/Learn_First_lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/src.dir/rule
+.PHONY : src/CMakeFiles/Learn_First_lib.dir/rule
 
 # Convenience name for target.
-src: src/CMakeFiles/src.dir/rule
-.PHONY : src
+Learn_First_lib: src/CMakeFiles/Learn_First_lib.dir/rule
+.PHONY : Learn_First_lib
 
 # clean rule for target.
-src/CMakeFiles/src.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/src.dir/build.make src/CMakeFiles/src.dir/clean
-.PHONY : src/CMakeFiles/src.dir/clean
+src/CMakeFiles/Learn_First_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/Learn_First_lib.dir/build.make src/CMakeFiles/Learn_First_lib.dir/clean
+.PHONY : src/CMakeFiles/Learn_First_lib.dir/clean
+
+#=============================================================================
+# Target rules for target tests/unit_tests/CMakeFiles/unit_tests_run.dir
+
+# All Build rule for target.
+tests/unit_tests/CMakeFiles/unit_tests_run.dir/all: src/CMakeFiles/Learn_First_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f tests/unit_tests/CMakeFiles/unit_tests_run.dir/build.make tests/unit_tests/CMakeFiles/unit_tests_run.dir/depend
+	$(MAKE) $(MAKESILENT) -f tests/unit_tests/CMakeFiles/unit_tests_run.dir/build.make tests/unit_tests/CMakeFiles/unit_tests_run.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles --progress-num=5,6 "Built target unit_tests_run"
+.PHONY : tests/unit_tests/CMakeFiles/unit_tests_run.dir/all
+
+# Build rule for subdir invocation for target.
+tests/unit_tests/CMakeFiles/unit_tests_run.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tests/unit_tests/CMakeFiles/unit_tests_run.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /mnt/d/ACME/Code_Storage/TestTDD/cmake_learn/build/CMakeFiles 0
+.PHONY : tests/unit_tests/CMakeFiles/unit_tests_run.dir/rule
+
+# Convenience name for target.
+unit_tests_run: tests/unit_tests/CMakeFiles/unit_tests_run.dir/rule
+.PHONY : unit_tests_run
+
+# clean rule for target.
+tests/unit_tests/CMakeFiles/unit_tests_run.dir/clean:
+	$(MAKE) $(MAKESILENT) -f tests/unit_tests/CMakeFiles/unit_tests_run.dir/build.make tests/unit_tests/CMakeFiles/unit_tests_run.dir/clean
+.PHONY : tests/unit_tests/CMakeFiles/unit_tests_run.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
