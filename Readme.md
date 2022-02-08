@@ -9,7 +9,7 @@
 |`src`|為假定的lib|
 |`test`|測試lib的Unit test|
 
-`main.cc`為主要程式呼叫src的lib
+`main.cpp`為主要程式呼叫src的lib
 
 ## Changelog
 ---
